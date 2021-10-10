@@ -11,6 +11,10 @@ http:
   trusted_proxies:
   - 10.42.0.0/16
 
+# https://www.home-assistant.io/integrations/mqtt
+mqtt:
+  broker: mqtt
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
