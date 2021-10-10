@@ -1,0 +1,17 @@
+# Logs
+home-assistant.log
+
+# Database
+home-assistant_v2.db*
+
+# Ignore .storage/ but keep subfolder lovelace
+.storage/*
+!.storage/lovelace
+
+# Contains private data and secrets
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml
+
+# Misc
+.HA_VERSION
