@@ -6,6 +6,11 @@ default_config:
 tts:
   - platform: google_translate
 
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+  - 10.42.0.0/16
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
